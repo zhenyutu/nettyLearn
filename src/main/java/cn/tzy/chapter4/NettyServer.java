@@ -50,14 +50,25 @@ class ServerHandler extends ChannelInboundHandlerAdapter{
         String body = new String(bytes,"UTF-8");
         System.out.println("the client says: "+ body);
 
+//        byte[] req = null;
+//        ByteBuf buffer = null;
+//        for (int i=0;i<100;i++){
+//            req = ("this is No."+i+" server sent the message").getBytes();
+//            buffer = Unpooled.buffer(req.length);
+//            buffer.writeBytes(req);
+//            ctx.writeAndFlush(buffer);
+//        }
+
         byte[] req = null;
         ByteBuf buffer = null;
+        StringBuilder sb = new StringBuilder();
         for (int i=0;i<100;i++){
-            req = ("this is No."+i+" server sent the message").getBytes();
-            buffer = Unpooled.buffer(req.length);
-            buffer.writeBytes(req);
-            ctx.writeAndFlush(buffer);
+            sb.append("abcdefghijklmnopqrstuvwxyz");
         }
+        req = sb.toString().getBytes();
+        buffer = Unpooled.buffer(req.length);
+        buffer.writeBytes(req);
+        ctx.writeAndFlush(buffer);
     }
 
     @Override

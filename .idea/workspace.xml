@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d707951d-031f-4c8d-89a3-ae4e6895c88e" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServer.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServerHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,10 +25,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="WebSocketServerHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+            <state relative-caret-position="227">
+              <caret line="116" column="33" lean-forward="false" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -72,7 +73,9 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter10/HttpFileServerHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServerHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServerHandler.java" />
       </list>
     </option>
   </component>
@@ -225,6 +228,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat" />
+      <recent name="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock" />
       <recent name="$PROJECT_DIR$/src/main/java/cn/tzy" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -817,12 +822,12 @@
       <workItem from="1509323428116" duration="13000" />
       <workItem from="1509345934267" duration="7181000" />
       <workItem from="1509410158099" duration="23000" />
-      <workItem from="1509415883468" duration="7978000" />
+      <workItem from="1509415883468" duration="8129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42029000" />
+    <option name="totallyTimeSpent" value="42180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="18" width="1366" height="750" extended-state="6" />
@@ -869,7 +874,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServerHandler.java</url>
           <line>53</line>
           <properties />
           <option name="timeStamp" value="18" />
@@ -1284,23 +1289,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="75" column="26" lean-forward="true" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
           <folding>
-            <marker date="1509418456473" expanded="false" signature="0:605" ph="/.../" />
-            <marker date="1509418456473" expanded="false" signature="640:1146" ph="..." />
-            <marker date="1509418456473" expanded="true" signature="1148:1212" ph="/**...*/" />
-            <marker date="1509418456473" expanded="true" signature="1291:2421" ph="{...}" />
-            <marker date="1509418456473" expanded="false" signature="1558:1684" ph="(ChannelInitializer) (ch) → {" />
-            <marker date="1509418456473" expanded="false" signature="2045:2051" ph="}" />
-            <marker date="1509418456473" expanded="true" signature="2483:2687" ph="{...}" />
+            <marker date="1509432842334" expanded="false" signature="0:605" ph="/.../" />
+            <marker date="1509432842334" expanded="false" signature="654:1160" ph="..." />
+            <marker date="1509432842334" expanded="true" signature="1162:1226" ph="/**...*/" />
+            <marker date="1509432842334" expanded="true" signature="1305:2435" ph="{...}" />
+            <marker date="1509432842334" expanded="false" signature="1572:1698" ph="(ChannelInitializer) (ch) → {" />
+            <marker date="1509432842334" expanded="false" signature="2059:2065" ph="}" />
+            <marker date="1509432842334" expanded="true" signature="2497:2701" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-480">
           <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
@@ -1322,10 +1327,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        <state relative-caret-position="227">
+          <caret line="116" column="33" lean-forward="false" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -21,6 +21,7 @@
        socket.onopen = function (event) {
            var ta = document.getElementById('responseText');
            ta.value = "打开WebSocket正常";
+//           send("tuzhenyu");
        };
        socket.onclose = function (event) {
            var ta = document.getElementById('responseText');
@@ -42,11 +43,12 @@
     }
 </script>
 <form onsubmit="return false">
-    <input type="text" name="message" value="Netty最佳实践"/>
-    <br><br>
-    <input type="button" value="发送WebSocket请求信息" onclick="send(this.form.message.value)"/>
+    <!--<input type="text" name="message" value="Netty最佳实践"/>-->
+    <!--<br><br>-->
+    <input type="button" name="start" value="start" onclick="send(this.form.start.value)"/>
+    <input type="button" name="stop" value="stop" onclick="send(this.form.stop.value)"/>
     <hr color="blue">
-    <h3>服务端返回的应答信息</h3>
+    <h3>实时时间校准</h3>
     <textarea id="responseText" cols="150" rows="50"></textarea>
 </form>
 </body>

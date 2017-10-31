@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d707951d-031f-4c8d-89a3-ae4e6895c88e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WebSocketServer.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html">
+      <file leaf-file-name="WebSocketServerHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+            <state relative-caret-position="158">
+              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,9 +70,9 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter5/NettyServer2.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter10/HttpFileServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter10/HttpFileServerHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java" />
       </list>
     </option>
   </component>
@@ -818,12 +817,12 @@
       <workItem from="1509323428116" duration="13000" />
       <workItem from="1509345934267" duration="7181000" />
       <workItem from="1509410158099" duration="23000" />
-      <workItem from="1509415883468" duration="4473000" />
+      <workItem from="1509415883468" duration="7978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38524000" />
+    <option name="totallyTimeSpent" value="42029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="18" width="1366" height="750" extended-state="6" />
@@ -839,19 +838,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27900147" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27900147" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41997063" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21742313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941263" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25403818" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -871,12 +870,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java</url>
-          <line>52</line>
+          <line>53</line>
           <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1104,22 +1103,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="75" column="26" lean-forward="true" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
-          <folding>
-            <marker date="1509418456473" expanded="false" signature="0:605" ph="/.../" />
-            <marker date="1509418456473" expanded="false" signature="640:1146" ph="..." />
-            <marker date="1509418456473" expanded="true" signature="1148:1212" ph="/**...*/" />
-            <marker date="1509418456473" expanded="true" signature="1291:2421" ph="{...}" />
-            <marker date="1509418456473" expanded="false" signature="1558:1684" ph="(ChannelInitializer) (ch) → {" />
-            <marker date="1509418456473" expanded="false" signature="2045:2051" ph="}" />
-            <marker date="1509418456473" expanded="true" signature="2483:2687" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -1301,28 +1284,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-278">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="122">
+          <caret line="75" column="26" lean-forward="true" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
           <folding>
-            <marker date="1509418456405" expanded="false" signature="0:605" ph="/.../" />
-            <marker date="1509418456405" expanded="false" signature="640:1475" ph="..." />
-            <marker date="1509418456405" expanded="true" signature="1477:1541" ph="/**...*/" />
-            <marker date="1509418456405" expanded="true" signature="1879:2110" ph="{...}" />
-            <marker date="1509418456405" expanded="true" signature="2206:2227" ph="{...}" />
-            <marker date="1509418456405" expanded="true" signature="2334:2958" ph="{...}" />
-            <marker date="1509418456405" expanded="true" signature="3052:3897" ph="{...}" />
-            <marker date="1509418456405" expanded="true" signature="4051:4511" ph="{...}" />
-            <marker date="1509418456405" expanded="true" signature="4625:4672" ph="{...}" />
+            <marker date="1509418456473" expanded="false" signature="0:605" ph="/.../" />
+            <marker date="1509418456473" expanded="false" signature="640:1146" ph="..." />
+            <marker date="1509418456473" expanded="true" signature="1148:1212" ph="/**...*/" />
+            <marker date="1509418456473" expanded="true" signature="1291:2421" ph="{...}" />
+            <marker date="1509418456473" expanded="false" signature="1558:1684" ph="(ChannelInitializer) (ch) → {" />
+            <marker date="1509418456473" expanded="false" signature="2045:2051" ph="}" />
+            <marker date="1509418456473" expanded="true" signature="2483:2687" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        <state relative-caret-position="-480">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <marker date="1509431662954" expanded="true" signature="31:1646" ph="..." />
+            <marker date="1509431662954" expanded="true" signature="38:114" ph="..." />
+            <marker date="1509431662954" expanded="true" signature="121:1638" ph="..." />
+            <marker date="1509431662954" expanded="true" signature="158:1218" ph="..." />
+            <marker date="1509431662954" expanded="true" signature="202:257" ph="{...}" />
+            <marker date="1509431662954" expanded="true" signature="282:878" ph="{...}" />
+            <marker date="1509431662954" expanded="true" signature="381:512" ph="{...}" />
+            <marker date="1509431662954" expanded="true" signature="554:695" ph="{...}" />
+            <marker date="1509431662954" expanded="true" signature="738:872" ph="{...}" />
+            <marker date="1509431662954" expanded="true" signature="883:931" ph="{...}" />
+            <marker date="1509431662954" expanded="true" signature="959:1209" ph="{...}" />
+            <marker date="1509431662954" expanded="true" signature="1059:1149" ph="{...}" />
+            <marker date="1509431662954" expanded="true" signature="1249:1630" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding />
         </state>
       </provider>

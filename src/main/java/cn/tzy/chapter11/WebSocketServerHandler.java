@@ -45,6 +45,7 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
 	    .getLogger(WebSocketServerHandler.class.getName());
 
     private WebSocketServerHandshaker handshaker;
+    private volatile boolean stop = false;
 
 	@Override
 	public void channelRead0(ChannelHandlerContext ctx, Object msg)
@@ -66,6 +67,7 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
 
     private void handleHttpRequest(ChannelHandlerContext ctx,
 	    FullHttpRequest req) throws Exception {
+
 
 	// 如果HTTP解码失败，返回HHTP异常
 	if (!req.getDecoderResult().isSuccess()
@@ -110,13 +112,24 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
 
 	// 返回应答消息
 	String request = ((TextWebSocketFrame) frame).text();
+	if (!"start".equals(request)){
+		stop = true;
+		System.out.println("stop");
+	}
+
 	if (logger.isLoggable(Level.FINE)) {
 	    logger.fine(String.format("%s received %s", ctx.channel(), request));
 	}
-	ctx.channel().write(
-		new TextWebSocketFrame(request
-			+ " , 欢迎使用Netty WebSocket服务，现在时刻："
-			+ new java.util.Date().toString()));
+	while (!stop){
+		try{
+			ctx.channel().writeAndFlush(
+					new TextWebSocketFrame("欢迎使用Netty WebSocket服务，现在时刻："
+							+ new java.util.Date().toString()));
+			Thread.sleep(1000);
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+	}
     }
 
     private static void sendHttpResponse(ChannelHandlerContext ctx,

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.tzy.chapter11.webSocketChat;
+package cn.tzy.chapter11.webSocketClock;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -58,8 +58,11 @@ public class WebSocketServer {
 		    });
 
 	    Channel ch = b.bind(port).sync().channel();
-	    System.out.println("Web socket server started at port " + port + '.');
-	    System.out.println("Open your browser and navigate to http://localhost:" + port + '/');
+	    System.out.println("Web socket server started at port " + port
+		    + '.');
+	    System.out
+		    .println("Open your browser and navigate to http://localhost:"
+			    + port + '/');
 
 	    ch.closeFuture().sync();
 	} finally {

@@ -6,8 +6,6 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.string.StringDecoder;
-import io.netty.handler.codec.string.StringEncoder;
 
 
 /**
@@ -26,7 +24,7 @@ public class NettyServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            socketChannel.pipeline().addLast(new ServerHandler2());
+                            socketChannel.pipeline().addLast(new ServerHandler());
                         }
                     });
 
@@ -52,7 +50,7 @@ class ServerHandler extends ChannelInboundHandlerAdapter{
         ByteBuf buf = (ByteBuf)msg;
         byte[] bytes = new byte[buf.readableBytes()];
         buf.readBytes(bytes);
-        System.out.println(new String(bytes,"UTF-8"));
+        System.out.println("receive the bytes: "+new String(bytes,"UTF-8"));
     }
 
     @Override

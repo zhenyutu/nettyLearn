@@ -26,8 +26,8 @@ public class NettyServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            socketChannel.pipeline().addLast(new LineBasedFrameDecoder(1024));
-                            socketChannel.pipeline().addLast(new StringDecoder());
+//                            socketChannel.pipeline().addLast(new LineBasedFrameDecoder(1024));
+//                            socketChannel.pipeline().addLast(new StringDecoder());
                             socketChannel.pipeline().addLast(new ServerHandler());
                         }
                     });
@@ -49,32 +49,40 @@ public class NettyServer {
 class ServerHandler extends ChannelInboundHandlerAdapter{
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-//        ByteBuf buf = (ByteBuf)msg;
-//        byte[] bytes = new byte[buf.readableBytes()];
-//        buf.readBytes(bytes);
-//        String body = new String(bytes,"UTF-8");
-        String body = (String)msg;
+        ByteBuf buf = (ByteBuf)msg;
+        byte[] bytes = new byte[buf.readableBytes()];
+        buf.readBytes(bytes);
+        String body = new String(bytes,"UTF-8");
+//        String body = (String)msg;
         System.out.println("the client says: "+ body);
 
-//        byte[] req = null;
-//        ByteBuf buffer = null;
+        byte[] req = null;
+        ByteBuf buffer = null;
 //        for (int i=0;i<100;i++){
-//            req = ("this is No."+i+" server sent the message\n").getBytes();
+//            req = ("this is No."+i+" server sent the message").getBytes();
 //            buffer = Unpooled.buffer(req.length);
 //            buffer.writeBytes(req);
 //            ctx.writeAndFlush(buffer);
 //        }
 
-        byte[] req = null;
-        ByteBuf buffer = null;
-        StringBuilder sb = new StringBuilder();
         for (int i=0;i<100;i++){
-            sb.append("abcdefghijklmnopqrstuvwxyz\n");
+            req = ("hello world").getBytes();
+            buffer = Unpooled.buffer(req.length);
+            buffer.writeBytes(req);
+            ctx.writeAndFlush(buffer);
         }
-        req = sb.toString().getBytes();
-        buffer = Unpooled.buffer(req.length);
-        buffer.writeBytes(req);
-        ctx.writeAndFlush(buffer);
+
+//        byte[] req = null;
+//        ByteBuf buffer = null;
+//        StringBuilder sb = new StringBuilder();
+//        for (int i=0;i<100;i++){
+//            sb.append("abcdefghijklmnopqrstuvwxyz");
+//        }
+//        sb.append("\n");
+//        req = sb.toString().getBytes();
+//        buffer = Unpooled.buffer(req.length);
+//        buffer.writeBytes(req);
+//        ctx.writeAndFlush(buffer);
     }
 
     @Override

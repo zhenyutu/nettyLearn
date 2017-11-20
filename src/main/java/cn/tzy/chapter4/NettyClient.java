@@ -7,8 +7,11 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.codec.DelimiterBasedFrameDecoder;
+import io.netty.handler.codec.FixedLengthFrameDecoder;
 import io.netty.handler.codec.LineBasedFrameDecoder;
 import io.netty.handler.codec.string.StringDecoder;
+
 
 /**
  * Created by tuzhenyu on 17-10-29.
@@ -25,8 +28,11 @@ public class NettyClient {
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            socketChannel.pipeline().addLast(new LineBasedFrameDecoder(1024));
-                            socketChannel.pipeline().addLast(new StringDecoder());
+                            socketChannel.pipeline().addLast(new FixedLengthFrameDecoder(("hello world").getBytes().length));
+//                            socketChannel.pipeline().addLast(new LineBasedFrameDecoder(1024));
+//                            socketChannel.pipeline().addLast(new DelimiterBasedFrameDecoder(1024,
+//                                    Unpooled.copiedBuffer("$".getBytes())));
+//                            socketChannel.pipeline().addLast(new StringDecoder());
                             socketChannel.pipeline().addLast(new ClientHandler());
                         }
                     });
@@ -55,11 +61,11 @@ class ClientHandler extends ChannelInboundHandlerAdapter{
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-//        ByteBuf buf = (ByteBuf)msg;
-//        byte[] bytes = new byte[buf.readableBytes()];
-//        buf.readBytes(bytes);
-//        String body = new String(bytes,"UTF-8");
-        String body = (String) msg;
+        ByteBuf buf = (ByteBuf)msg;
+        byte[] bytes = new byte[buf.readableBytes()];
+        buf.readBytes(bytes);
+        String body = new String(bytes,"UTF-8");
+//        String body = (String) msg;
         System.out.println("the server says: "+ body);
     }
 

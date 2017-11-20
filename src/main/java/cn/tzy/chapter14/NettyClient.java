@@ -17,7 +17,7 @@ public class NettyClient {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
             Bootstrap b = new Bootstrap();
-            b.group(group).channel(NioSocketChannel.class).option(ChannelOption.TCP_NODELAY,true)
+            b.group(group).channel(NioSocketChannel.class)
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
@@ -43,10 +43,14 @@ public class NettyClient {
 class ClientHandler extends ChannelInboundHandlerAdapter{
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        byte[] bytes = "hello,world".getBytes();
-        ByteBuf buf = Unpooled.buffer(bytes.length);
-        buf.writeBytes(bytes);
-        ctx.writeAndFlush(buf);
+        byte[] req = null;
+        ByteBuf buffer = null;
+        for (int i=0;i<100;i++){
+            req = ("this is No."+i+" server sent the message ").getBytes();
+            buffer = Unpooled.buffer(req.length);
+            buffer.writeBytes(req);
+            ctx.writeAndFlush(buffer);
+        }
     }
 
     @Override

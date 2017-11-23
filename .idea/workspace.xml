@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d707951d-031f-4c8d-89a3-ae4e6895c88e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter16/NettyClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter16/NettyServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServerHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IdleStateHandler.java" pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/handler/timeout/IdleStateHandler.java">
+      <file leaf-file-name="WebSocketServerHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4355">
-              <caret line="375" column="0" lean-forward="true" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
+            <state relative-caret-position="812">
+              <caret line="125" column="18" lean-forward="false" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -67,6 +66,7 @@
       <find>processSelectedKeys</find>
       <find>run</find>
       <find>run()</find>
+      <find>sendHttpResponse</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -91,7 +91,6 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter10/HttpFileServerHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.html" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServerHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServerHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocket/WebSocketServer.java" />
@@ -136,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter14/NettyClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter16/NettyClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter16/NettyServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServerHandler.java" />
       </list>
     </option>
   </component>
@@ -146,9 +146,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="18" />
+    <option name="y" value="-3" />
     <option name="width" value="1366" />
-    <option name="height" value="750" />
+    <option name="height" value="771" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -234,13 +234,39 @@
               <option name="myItemId" value="tzy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chapter16" />
+              <option name="myItemId" value="nettyLearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyLearn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NettyServer.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tzy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webSocketClock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -269,45 +295,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chapter16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyClient.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nettyLearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nettyLearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tzy" />
+              <option name="myItemId" value="chapter11" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,7 +340,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/cn/tzy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NettyClient (2)">
+  <component name="RunManager" selected="Application.WebSocketServer">
     <configuration default="false" name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -385,26 +381,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="NettyClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cn.tzy.chapter4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="cn.tzy.chapter4.NettyClient" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="nettyLearn" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="NettyServer (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -433,6 +409,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="cn.tzy.chapter16.NettyClient" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="nettyLearn" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="WebSocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.tzy.chapter11.webSocketClock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="cn.tzy.chapter11.webSocketClock.WebSocketServer" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -892,17 +888,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.NettyServer" />
       <item index="1" class="java.lang.String" itemvalue="Application.NettyClient" />
-      <item index="2" class="java.lang.String" itemvalue="Application.NettyClient (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Application.NettyServer (2)" />
-      <item index="4" class="java.lang.String" itemvalue="Application.NettyClient (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Application.NettyServer (2)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.NettyClient (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.WebSocketServer" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.NettyClient (2)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.NettyServer (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Application.NettyClient" />
-        <item index="3" class="java.lang.String" itemvalue="Application.NettyServer" />
-        <item index="4" class="java.lang.String" itemvalue="Application.NettyClient (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Application.WebSocketServer" />
+        <item index="1" class="java.lang.String" itemvalue="Application.NettyClient (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Application.NettyServer (2)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.NettyClient" />
+        <item index="4" class="java.lang.String" itemvalue="Application.NettyServer" />
       </list>
     </recent_temporary>
   </component>
@@ -964,20 +960,21 @@
       <workItem from="1511144280296" duration="16830000" />
       <workItem from="1511224380852" duration="42000" />
       <workItem from="1511228651727" duration="9520000" />
+      <workItem from="1511325165898" duration="5020000" />
+      <workItem from="1511397307903" duration="121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236993000" />
+    <option name="totallyTimeSpent" value="242134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="18" width="1366" height="750" extended-state="6" />
+    <frame x="0" y="-3" width="1366" height="771" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19676946" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -989,7 +986,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23792094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21815519" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1001,6 +998,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19676946" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1060,27 +1058,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/channel/DefaultChannelPromise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/channel/SingleThreadEventLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/channel/MultithreadEventLoopGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/channel/EventLoop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -1585,29 +1562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="435" column="7" lean-forward="true" selection-start-line="435" selection-start-column="7" selection-end-line="435" selection-end-column="7" />
-          <folding>
-            <marker date="1510105610685" expanded="false" signature="0:634" ph="/.../" />
-            <marker date="1510105610685" expanded="false" signature="675:856" ph="..." />
-            <marker date="1510105610685" expanded="true" signature="858:8826" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="9342:9751" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="9883:9964" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="9970:10597" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="10788:10957" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="10963:12039" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="12236:12415" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="12421:13577" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="13795:15322" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="15444:15564" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="15570:16001" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="16086:18835" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="18841:19375" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="19474:20214" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="20287:20911" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="20336:20432" ph="//..." />
-            <marker date="1510105610685" expanded="true" signature="20917:21485" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="21587:21646" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="21688:22115" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1615,22 +1569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <marker date="1511178002091" expanded="false" signature="34:340" ph="..." />
-            <marker date="1511178002091" expanded="true" signature="343:406" ph="/**...*/" />
-            <marker date="1511178002091" expanded="true" signature="432:1688" ph="{...}" />
-            <marker date="1511178002091" expanded="true" signature="465:1559" ph="{...}" />
-            <marker date="1511178002091" expanded="false" signature="831:1005" ph="(ChannelInitializer) (socketChannel) → {" />
-            <marker date="1511178002091" expanded="false" signature="1243:1270" ph="}" />
-            <marker date="1511178002091" expanded="true" signature="1604:1686" ph="{...}" />
-            <marker date="1511178002091" expanded="true" signature="1746:2189" ph="{...}" />
-            <marker date="1511178002091" expanded="true" signature="1846:2050" ph="{...}" />
-            <marker date="1511178002091" expanded="true" signature="2159:2187" ph="{...}" />
-            <marker date="1511178002091" expanded="true" signature="2256:2509" ph="{...}" />
-            <marker date="1511178002091" expanded="true" signature="2361:2507" ph="{...}" />
-            <marker date="1511178002091" expanded="true" signature="2569:2696" ph="{...}" />
-            <marker date="1511178002091" expanded="true" signature="2687:2694" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1638,18 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <marker date="1511178075763" expanded="false" signature="34:353" ph="..." />
-            <marker date="1511178075763" expanded="true" signature="355:418" ph="/**...*/" />
-            <marker date="1511178075763" expanded="true" signature="444:1498" ph="{...}" />
-            <marker date="1511178075763" expanded="true" signature="492:1354" ph="{...}" />
-            <marker date="1511178075763" expanded="false" signature="695:869" ph="(ChannelInitializer) (socketChannel) → {" />
-            <marker date="1511178075763" expanded="false" signature="1081:1108" ph="}" />
-            <marker date="1511178075763" expanded="true" signature="1399:1496" ph="{...}" />
-            <marker date="1511178075763" expanded="true" signature="1556:2147" ph="{...}" />
-            <marker date="1511178075763" expanded="true" signature="1646:2008" ph="{...}" />
-            <marker date="1511178075763" expanded="true" signature="2117:2145" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1657,26 +1583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <marker date="1510105610685" expanded="false" signature="0:634" ph="/.../" />
-            <marker date="1510105610685" expanded="true" signature="694:992" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="1105:1359" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="1512:1560" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="1566:1838" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="2026:2092" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="2098:2343" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="2465:2505" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="2511:2751" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="2856:2891" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="2897:3137" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="3247:3287" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="3293:3518" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="3598:3625" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="3631:3879" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="3996:4036" ph="{...}" />
-            <marker date="1510105610685" expanded="true" signature="4042:4268" ph="/**...*/" />
-            <marker date="1510105610685" expanded="true" signature="4349:4377" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1684,19 +1590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-          <folding>
-            <marker date="1511240002580" expanded="true" signature="34:532" ph="..." />
-            <marker date="1511240002580" expanded="true" signature="534:597" ph="/**...*/" />
-            <marker date="1511240002580" expanded="true" signature="623:1948" ph="{...}" />
-            <marker date="1511240002580" expanded="true" signature="656:1819" ph="{...}" />
-            <marker date="1511240002580" expanded="true" signature="1022:1196" ph="(ChannelInitializer) (socketChannel) → {" />
-            <marker date="1511240002580" expanded="true" signature="1503:1530" ph="}" />
-            <marker date="1511240002580" expanded="true" signature="1864:1946" ph="{...}" />
-            <marker date="1511240002580" expanded="true" signature="2016:2987" ph="{...}" />
-            <marker date="1511240002580" expanded="true" signature="2162:2651" ph="{...}" />
-            <marker date="1511240002580" expanded="true" signature="2751:2848" ph="{...}" />
-            <marker date="1511240002580" expanded="true" signature="2957:2985" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1704,27 +1597,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="30" column="70" lean-forward="false" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
-          <folding>
-            <marker date="1511233366990" expanded="true" signature="34:556" ph="..." />
-            <marker date="1511233366990" expanded="true" signature="558:621" ph="/**...*/" />
-            <marker date="1511233366990" expanded="true" signature="647:1794" ph="{...}" />
-            <marker date="1511233366990" expanded="true" signature="695:1650" ph="{...}" />
-            <marker date="1511233366990" expanded="false" signature="898:1072" ph="(ChannelInitializer) (socketChannel) → {" />
-            <marker date="1511233366990" expanded="false" signature="1377:1404" ph="}" />
-            <marker date="1511233366990" expanded="true" signature="1695:1792" ph="{...}" />
-            <marker date="1511233366990" expanded="true" signature="1862:2927" ph="{...}" />
-            <marker date="1511233366990" expanded="true" signature="2013:2109" ph="{...}" />
-            <marker date="1511233366990" expanded="true" signature="2201:2301" ph="{...}" />
-            <marker date="1511233366990" expanded="true" signature="2408:2788" ph="{...}" />
-            <marker date="1511233366990" expanded="true" signature="2897:2925" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/handler/timeout/IdleStateHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4355">
-          <caret line="375" column="0" lean-forward="true" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
+        <state relative-caret-position="602">
+          <caret line="375" column="0" lean-forward="false" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-783">
+          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding>
+            <marker date="1509433067934" expanded="false" signature="0:605" ph="/.../" />
+            <marker date="1509433067934" expanded="false" signature="655:1161" ph="..." />
+            <marker date="1509433067934" expanded="true" signature="1163:1227" ph="/**...*/" />
+            <marker date="1509433067934" expanded="true" signature="1306:2436" ph="{...}" />
+            <marker date="1509433067934" expanded="false" signature="1573:1699" ph="(ChannelInitializer) (ch) → {" />
+            <marker date="1509433067934" expanded="false" signature="2060:2066" ph="}" />
+            <marker date="1509433067934" expanded="true" signature="2498:2702" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="125" column="18" lean-forward="false" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
           <folding />
         </state>
       </provider>

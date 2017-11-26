@@ -2,76 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d707951d-031f-4c8d-89a3-ae4e6895c88e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter0/PromiseTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter0/RecyclerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter0/Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter10/HttpFileServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter10/HttpFileServerHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/ChatService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServerHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/chat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/entry/Operation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/entry/Request.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/entry/Response.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/static/jquery-1.11.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/static/map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServerHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/ChannelBufferByteInput.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/ChannelBufferByteOutput.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/Header.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/MarshallingCodecFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/MarshallingDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/MarshallingEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyMessageDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyMessageEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter14/NettyClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter14/NettyServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter16/NettyClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter16/NettyServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter3/TimeClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter3/TimeServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter4/NettyClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter4/NettyServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter5/NettyClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter5/NettyServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter5/NettyServer2.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter0/PromiseTest.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter0/PromiseTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter0/RecyclerTest.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter0/RecyclerTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter0/Test.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter0/Test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter10/HttpFileServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter10/HttpFileServerHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServer.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketChat/WebSocketServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketChat/WebSocketServerHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/chat.html" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketChat/chat.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/entry/Operation.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketChat/entry/Operation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/entry/Request.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketChat/entry/Request.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/entry/Response.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketChat/entry/Response.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/static/jquery-1.11.1.min.js" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketChat/static/jquery-1.11.1.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/static/map.js" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketChat/static/map.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServer.html" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketClock/WebSocketServer.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServer.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketClock/WebSocketServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketClock/WebSocketServerHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/ChannelBufferByteInput.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter12/ChannelBufferByteInput.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/ChannelBufferByteOutput.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter12/ChannelBufferByteOutput.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/Header.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter12/Header.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/MarshallingCodecFactory.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter12/MarshallingCodecFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/MarshallingDecoder.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter12/MarshallingDecoder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/MarshallingEncoder.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter12/MarshallingEncoder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyClient.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter12/NettyClient.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyMessage.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter12/NettyMessage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyMessageDecoder.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter12/NettyMessageDecoder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyMessageEncoder.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter12/NettyMessageEncoder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyServer.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter12/NettyServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter14/NettyClient.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter14/NettyClient.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter14/NettyServer.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter14/NettyServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter3/TimeClient.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter3/TimeClient.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/chapter3/TimeServer.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter3/TimeServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/zookeeper/ZookeeperTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nettyLearn.iml" afterPath="$PROJECT_DIR$/nettyLearn.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,12 +24,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WebSocketServerHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketClock/WebSocketServerHandler.java">
+      <file leaf-file-name="ZookeeperTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/zookeeper/ZookeeperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="151">
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#477#761#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,7 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter5/NettyServer2.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter10/HttpFileServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter10/HttpFileServerHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/WebSocketServer.java" />
@@ -190,7 +127,6 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter0/MyObject.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter0/RecyclerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter0/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter0/PromiseTest.java" />
@@ -204,6 +140,8 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter16/NettyServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketClock/WebSocketServerHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketClock/WebSocketServerHandler.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/zookeeper/ZookeeperTest.java" />
       </list>
     </option>
   </component>
@@ -212,6 +150,34 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="nettyLearn" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="nettyLearn" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="18" />
@@ -236,6 +202,16 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyLearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="nettyLearn" />
@@ -275,6 +251,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyLearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyLearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tzy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zookeeper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,27 +350,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/cn/tzy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WebSocketServer">
-    <configuration default="false" name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cn.tzy.netty.chapter14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="cn.tzy.netty.chapter14.NettyServer" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="nettyLearn" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.ZookeeperTest">
     <configuration default="false" name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -433,6 +419,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="cn.tzy.netty.chapter11.webSocketClock.WebSocketServer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="nettyLearn" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ZookeeperTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.tzy.zookeeper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="cn.tzy.zookeeper.ZookeeperTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -890,19 +896,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.NettyServer" />
-      <item index="1" class="java.lang.String" itemvalue="Application.NettyClient" />
-      <item index="2" class="java.lang.String" itemvalue="Application.NettyServer" />
-      <item index="3" class="java.lang.String" itemvalue="Application.NettyClient" />
-      <item index="4" class="java.lang.String" itemvalue="Application.WebSocketServer" />
+      <item index="0" class="java.lang.String" itemvalue="Application.NettyClient" />
+      <item index="1" class="java.lang.String" itemvalue="Application.NettyServer" />
+      <item index="2" class="java.lang.String" itemvalue="Application.NettyClient" />
+      <item index="3" class="java.lang.String" itemvalue="Application.WebSocketServer" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ZookeeperTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.WebSocketServer" />
-        <item index="1" class="java.lang.String" itemvalue="Application.NettyClient" />
-        <item index="2" class="java.lang.String" itemvalue="Application.NettyServer" />
-        <item index="3" class="java.lang.String" itemvalue="Application.NettyClient" />
-        <item index="4" class="java.lang.String" itemvalue="Application.NettyServer" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ZookeeperTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.WebSocketServer" />
+        <item index="2" class="java.lang.String" itemvalue="Application.NettyClient" />
+        <item index="3" class="java.lang.String" itemvalue="Application.NettyServer" />
+        <item index="4" class="java.lang.String" itemvalue="Application.NettyClient" />
       </list>
     </recent_temporary>
   </component>
@@ -966,12 +972,12 @@
       <workItem from="1511228651727" duration="9520000" />
       <workItem from="1511325165898" duration="5020000" />
       <workItem from="1511397307903" duration="179000" />
-      <workItem from="1511680859526" duration="87000" />
+      <workItem from="1511680859526" duration="2317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242279000" />
+    <option name="totallyTimeSpent" value="244509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="18" width="1366" height="750" extended-state="6" />
@@ -980,18 +986,19 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19676946" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27900147" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20998532" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2863436" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21815519" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22401172" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1003,7 +1010,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19676946" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1063,20 +1069,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/channel/EventLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/util/concurrent/SingleThreadEventExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="740" column="0" lean-forward="false" selection-start-line="740" selection-start-column="0" selection-end-line="740" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -1637,9 +1629,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter11/webSocketClock/WebSocketServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="115">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <folding>
+            <marker date="1511680951591" expanded="false" signature="0:605" ph="/.../" />
+            <marker date="1511680951591" expanded="false" signature="661:1496" ph="..." />
+            <marker date="1511680951591" expanded="true" signature="1498:1562" ph="/**...*/" />
+            <marker date="1511680951591" expanded="true" signature="1963:2250" ph="{...}" />
+            <marker date="1511680951591" expanded="true" signature="2346:2374" ph="{...}" />
+            <marker date="1511680951591" expanded="true" signature="2511:3283" ph="{...}" />
+            <marker date="1511680951591" expanded="true" signature="3410:4779" ph="{...}" />
+            <marker date="1511680951591" expanded="true" signature="4933:5491" ph="{...}" />
+            <marker date="1511680951591" expanded="true" signature="5612:5673" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <marker date="1511681300291" expanded="true" signature="89:1572" ph="..." />
+            <marker date="1511681300291" expanded="true" signature="426:1561" ph="..." />
+            <marker date="1511681300291" expanded="true" signature="447:599" ph="..." />
+            <marker date="1511681300291" expanded="true" signature="620:769" ph="..." />
+            <marker date="1511681300291" expanded="true" signature="790:964" ph="..." />
+            <marker date="1511681300291" expanded="true" signature="985:1166" ph="..." />
+            <marker date="1511681300291" expanded="true" signature="1211:1360" ph="..." />
+            <marker date="1511681300291" expanded="true" signature="1382:1541" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/zookeeper/ZookeeperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#477#761#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

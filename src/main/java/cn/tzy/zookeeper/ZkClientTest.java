@@ -13,7 +13,7 @@ public class ZkClientTest {
 //        client.createPersistent("/zkClient");
 //        System.out.println(client.readData("/zkTest"));
 //        client.delete("/zkTest");
-        client.createPersistent("/zkTest",123);
-        System.out.println(client.readData("/zkTest"));
+        client.createPersistent("/nettyServer","");
+//        System.out.println(client.readData("/zkTest"));
     }
 }

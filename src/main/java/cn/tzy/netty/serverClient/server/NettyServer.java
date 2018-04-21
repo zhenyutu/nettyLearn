@@ -13,6 +13,10 @@ import java.net.SocketAddress;
  * @author tuzhenyu
  */
 public class NettyServer extends NettyTcpAcceptor{
+    public NettyServer(int port){
+        super(port);
+    }
+
     public NettyServer(SocketAddress address) {
         super(address);
     }
@@ -31,5 +35,16 @@ public class NettyServer extends NettyTcpAcceptor{
         });
 
         return bootstrap.bind(localAddress);
+    }
+
+    public static void main(String[] args) {
+        NettyServer server = new NettyServer(10000);
+
+        try {
+            server.start();
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
     }
 }

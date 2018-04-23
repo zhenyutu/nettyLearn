@@ -4,9 +4,11 @@ import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
+import io.netty.handler.timeout.IdleStateHandler;
 
 import java.net.SocketAddress;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by tuzhenyu on 18-4-19.
@@ -30,6 +32,9 @@ public class NettyServer extends NettyTcpAcceptor{
             @Override
             protected void initChannel(Channel ch) throws Exception {
                 ChannelPipeline pipeline =ch.pipeline();
+
+                pipeline.addLast(new IdleStateHandler(5,0,0, TimeUnit.SECONDS));
+                pipeline.addLast(new AcceptorIdleStateTrigger());
                 pipeline.addLast(new TimeServerHandler());
             }
         });

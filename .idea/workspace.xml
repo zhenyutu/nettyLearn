@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d707951d-031f-4c8d-89a3-ae4e6895c88e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyClient.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/ConnectorIdleStateTrigger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/comment/Constants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/AcceptorIdleStateTrigger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/Protocol.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/comment/Protocol.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter16/NettyClient.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter16/NettyClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyConnector.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyAcceptor.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyAcceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyServer.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyTcpAcceptor.java" afterPath="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyTcpAcceptor.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,13 +31,11 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="NettyClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyClient.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter16/NettyClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="239">
+              <caret line="74" column="30" lean-forward="false" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,12 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/chat.html" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter11/webSocketChat/WebSocketServerHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/Header.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/NettyMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/codec/MarshallingCodecFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/encoder/NettyMessageEncoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/encoder/MarshallingCodecFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/decoder/MarshallingDecoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/chapter12/encoder/MarshallingDecoder.java" />
@@ -134,12 +134,18 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/Transporter.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/Protocol.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyTcpAcceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyAcceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyConnector.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/Connector.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyTcpConnector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/comment/Protocol.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/comment/Contants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyConnector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyAcceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/AcceptorIdleStateTrigger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter16/NettyServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter16/NettyClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/ConnectorIdleStateTrigger.java" />
       </list>
     </option>
   </component>
@@ -198,6 +204,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -329,40 +336,6 @@
               <option name="myItemId" value="serverClient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nettyLearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nettyLearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tzy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="serverClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -444,7 +417,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="comment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -483,6 +456,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyLearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyLearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tzy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NettyServer.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyLearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyLearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tzy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter16" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -599,7 +644,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1279,12 +1323,13 @@
       <workItem from="1519996018085" duration="599000" />
       <workItem from="1520134459008" duration="993000" />
       <workItem from="1524120675037" duration="14712000" />
-      <workItem from="1524292190358" duration="2913000" />
+      <workItem from="1524292190358" duration="7998000" />
+      <workItem from="1524449999268" duration="1303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311642000" />
+    <option name="totallyTimeSpent" value="318030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="18" width="1366" height="750" extended-state="6" />
@@ -1293,19 +1338,18 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19676946" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27900147" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27753305" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28487518" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2408492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2818448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1317,6 +1361,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19676946" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1394,34 +1439,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/zookeeper/ACLTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.10/zookeeper-3.4.10.jar!/org/apache/zookeeper/ZooKeeper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="422" column="16" lean-forward="true" selection-start-line="422" selection-start-column="16" selection-end-line="422" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.10/zookeeper-3.4.10.jar!/org/apache/zookeeper/server/quorum/QuorumPeerMain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="64" column="32" lean-forward="true" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.10/zookeeper-3.4.10.jar!/org/apache/zookeeper/server/ServerCnxnFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.10/zookeeper-3.4.10.jar!/org/apache/zookeeper/server/ZooKeeperServerMain.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1482,13 +1499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter16/NettyClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1748,31 +1758,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/Protocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <marker date="1524123198221" expanded="true" signature="36:98" ph="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyTcpAcceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <marker date="1524125406049" expanded="true" signature="50:211" ph="..." />
-            <marker date="1524125406049" expanded="true" signature="213:275" ph="/**...*/" />
-            <marker date="1524125406049" expanded="true" signature="376:456" ph="{...}" />
-            <marker date="1524125406049" expanded="true" signature="508:568" ph="{...}" />
-            <marker date="1524125406049" expanded="false" signature="623:634" ph=" { " />
-            <marker date="1524125406049" expanded="false" signature="684:690" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1883,27 +1868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyAcceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <marker date="1524125406005" expanded="true" signature="50:309" ph="..." />
-            <marker date="1524125406005" expanded="true" signature="311:373" ph="/**...*/" />
-            <marker date="1524125406005" expanded="true" signature="802:871" ph="{...}" />
-            <marker date="1524125406005" expanded="true" signature="949:1052" ph="{...}" />
-            <marker date="1524125406005" expanded="true" signature="1079:1265" ph="{...}" />
-            <marker date="1524125406005" expanded="false" signature="1306:1317" ph=" { " />
-            <marker date="1524125406005" expanded="false" signature="1332:1338" ph=" }" />
-            <marker date="1524125406005" expanded="true" signature="1392:1420" ph="{...}" />
-            <marker date="1524125406005" expanded="true" signature="1485:1625" ph="{...}" />
-            <marker date="1524125406005" expanded="true" signature="1664:1741" ph="{...}" />
-            <marker date="1524125406005" expanded="false" signature="1784:1794" ph=" { " />
-            <marker date="1524125406005" expanded="false" signature="1811:1817" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/Acceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1925,27 +1889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <marker date="1524188542801" expanded="true" signature="50:201" ph="..." />
-            <marker date="1524188542801" expanded="true" signature="203:265" ph="/**...*/" />
-            <marker date="1524188542801" expanded="false" signature="579:589" ph=" { " />
-            <marker date="1524188542801" expanded="false" signature="638:644" ph=" }" />
-            <marker date="1524188542801" expanded="false" signature="683:693" ph=" { " />
-            <marker date="1524188542801" expanded="false" signature="719:725" ph=" }" />
-            <marker date="1524188542801" expanded="true" signature="782:853" ph="{...}" />
-            <marker date="1524188542801" expanded="true" signature="880:1013" ph="{...}" />
-            <marker date="1524188542801" expanded="false" signature="1051:1062" ph=" { " />
-            <marker date="1524188542801" expanded="false" signature="1088:1094" ph=" }" />
-            <marker date="1524188542801" expanded="false" signature="1128:1138" ph=" { " />
-            <marker date="1524188542801" expanded="false" signature="1155:1161" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyTcpConnector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1957,26 +1900,6 @@
             <marker date="1524189917505" expanded="true" signature="343:349" ph=" }" />
             <marker date="1524189917505" expanded="true" signature="404:415" ph=" { " />
             <marker date="1524189917505" expanded="true" signature="459:465" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter3/TimeServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <marker date="1511680951783" expanded="false" signature="39:342" ph="..." />
-            <marker date="1511680951783" expanded="true" signature="345:408" ph="/**...*/" />
-            <marker date="1511680951783" expanded="true" signature="433:1497" ph="{...}" />
-            <marker date="1511680951783" expanded="true" signature="466:1406" ph="{...}" />
-            <marker date="1511680951783" expanded="false" signature="828:994" ph="(ChannelInitializer) (socketChannel) → {" />
-            <marker date="1511680951783" expanded="false" signature="1094:1117" ph="}" />
-            <marker date="1511680951783" expanded="true" signature="1450:1461" ph=" { " />
-            <marker date="1511680951783" expanded="true" signature="1489:1495" ph=" }" />
-            <marker date="1511680951783" expanded="true" signature="1559:2240" ph="{...}" />
-            <marker date="1511680951783" expanded="true" signature="1660:2100" ph="{...}" />
-            <marker date="1511680951783" expanded="true" signature="2209:2237" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2002,36 +1925,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyServer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        <state relative-caret-position="220">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
-            <marker date="1524299359648" expanded="true" signature="50:232" ph="..." />
-            <marker date="1524299359648" expanded="true" signature="234:296" ph="/**...*/" />
-            <marker date="1524299359648" expanded="true" signature="346:1203" ph="{...}" />
-            <marker date="1524299359648" expanded="false" signature="380:390" ph=" { " />
-            <marker date="1524299359648" expanded="false" signature="402:408" ph=" }" />
-            <marker date="1524299359648" expanded="false" signature="455:466" ph=" { " />
-            <marker date="1524299359648" expanded="false" signature="481:487" ph=" }" />
-            <marker date="1524299359648" expanded="true" signature="564:969" ph="{...}" />
-            <marker date="1524299359648" expanded="false" signature="647:775" ph="(ChannelInitializer) (ch) → {" />
-            <marker date="1524299359648" expanded="false" signature="900:915" ph="}" />
-            <marker date="1524299359648" expanded="true" signature="1014:1201" ph="{...}" />
-            <marker date="1524299359648" expanded="true" signature="1266:1947" ph="{...}" />
-            <marker date="1524299359648" expanded="true" signature="1367:1807" ph="{...}" />
-            <marker date="1524299359648" expanded="true" signature="1916:1944" ph="{...}" />
+            <marker date="1524299415876" expanded="true" signature="50:203" ph="..." />
+            <marker date="1524299415876" expanded="true" signature="205:267" ph="/**...*/" />
+            <marker date="1524299415876" expanded="true" signature="318:1244" ph="{...}" />
+            <marker date="1524299415876" expanded="true" signature="374:928" ph="{...}" />
+            <marker date="1524299415876" expanded="false" signature="452:557" ph="(ChannelInitializer) (ch) → {" />
+            <marker date="1524299415876" expanded="false" signature="689:704" ph="}" />
+            <marker date="1524299415876" expanded="true" signature="973:1242" ph="{...}" />
+            <marker date="1524299415876" expanded="true" signature="1307:2045" ph="{...}" />
+            <marker date="1524299415876" expanded="true" signature="1398:1575" ph="{...}" />
+            <marker date="1524299415876" expanded="true" signature="1675:1906" ph="{...}" />
+            <marker date="1524299415876" expanded="true" signature="2015:2043" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/comment/Protocol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="184">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1524301277088" expanded="true" signature="44:106" ph="/**...*/" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/comment/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <marker date="1524301276960" expanded="true" signature="44:106" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/NettyConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <marker date="1524301277288" expanded="true" signature="50:229" ph="..." />
+            <marker date="1524301277288" expanded="true" signature="231:293" ph="/**...*/" />
+            <marker date="1524301277288" expanded="false" signature="507:517" ph=" { " />
+            <marker date="1524301277288" expanded="false" signature="577:583" ph=" }" />
+            <marker date="1524301277288" expanded="false" signature="622:632" ph=" { " />
+            <marker date="1524301277288" expanded="false" signature="658:664" ph=" }" />
+            <marker date="1524301277288" expanded="true" signature="721:792" ph="{...}" />
+            <marker date="1524301277288" expanded="true" signature="819:952" ph="{...}" />
+            <marker date="1524301277288" expanded="false" signature="990:1001" ph=" { " />
+            <marker date="1524301277288" expanded="false" signature="1027:1033" ph=" }" />
+            <marker date="1524301277288" expanded="false" signature="1067:1077" ph=" { " />
+            <marker date="1524301277288" expanded="false" signature="1094:1100" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/AcceptorIdleStateTrigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <marker date="1524302851412" expanded="true" signature="50:191" ph="..." />
+            <marker date="1524302851412" expanded="true" signature="193:255" ph="/**...*/" />
+            <marker date="1524302851412" expanded="true" signature="437:754" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyAcceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-599">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1524301277160" expanded="true" signature="50:306" ph="..." />
+            <marker date="1524301277160" expanded="true" signature="308:370" ph="/**...*/" />
+            <marker date="1524301277160" expanded="true" signature="698:778" ph="{...}" />
+            <marker date="1524301277160" expanded="true" signature="856:959" ph="{...}" />
+            <marker date="1524301277160" expanded="true" signature="986:1172" ph="{...}" />
+            <marker date="1524301277160" expanded="false" signature="1213:1224" ph=" { " />
+            <marker date="1524301277160" expanded="false" signature="1239:1245" ph=" }" />
+            <marker date="1524301277160" expanded="true" signature="1299:1327" ph="{...}" />
+            <marker date="1524301277160" expanded="true" signature="1392:1532" ph="{...}" />
+            <marker date="1524301277160" expanded="true" signature="1571:1648" ph="{...}" />
+            <marker date="1524301277160" expanded="false" signature="1691:1701" ph=" { " />
+            <marker date="1524301277160" expanded="false" signature="1718:1724" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyTcpAcceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <marker date="1524301277224" expanded="true" signature="50:219" ph="..." />
+            <marker date="1524301277224" expanded="true" signature="221:283" ph="/**...*/" />
+            <marker date="1524301277224" expanded="true" signature="384:464" ph="{...}" />
+            <marker date="1524301277224" expanded="true" signature="516:576" ph="{...}" />
+            <marker date="1524301277224" expanded="false" signature="631:642" ph=" { " />
+            <marker date="1524301277224" expanded="false" signature="692:698" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter3/TimeServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <marker date="1511680951783" expanded="false" signature="39:342" ph="..." />
+            <marker date="1511680951783" expanded="true" signature="345:408" ph="/**...*/" />
+            <marker date="1511680951783" expanded="true" signature="433:1497" ph="{...}" />
+            <marker date="1511680951783" expanded="true" signature="466:1406" ph="{...}" />
+            <marker date="1511680951783" expanded="true" signature="828:994" ph="(ChannelInitializer) (socketChannel) → {" />
+            <marker date="1511680951783" expanded="true" signature="1094:1117" ph="}" />
+            <marker date="1511680951783" expanded="false" signature="1450:1461" ph=" { " />
+            <marker date="1511680951783" expanded="false" signature="1489:1495" ph=" }" />
+            <marker date="1511680951783" expanded="true" signature="1660:2100" ph="{...}" />
+            <marker date="1511680951783" expanded="true" signature="2209:2237" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/server/NettyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <marker date="1524303007760" expanded="true" signature="50:320" ph="..." />
+            <marker date="1524303007760" expanded="true" signature="322:384" ph="/**...*/" />
+            <marker date="1524303007760" expanded="true" signature="434:1439" ph="{...}" />
+            <marker date="1524303007760" expanded="false" signature="468:478" ph=" { " />
+            <marker date="1524303007760" expanded="false" signature="490:496" ph=" }" />
+            <marker date="1524303007760" expanded="false" signature="543:554" ph=" { " />
+            <marker date="1524303007760" expanded="false" signature="569:575" ph=" }" />
+            <marker date="1524303007760" expanded="true" signature="652:1205" ph="{...}" />
+            <marker date="1524303007760" expanded="true" signature="735:863" ph="(ChannelInitializer) (ch) → {" />
+            <marker date="1524303007760" expanded="true" signature="1136:1151" ph="}" />
+            <marker date="1524303007760" expanded="true" signature="1250:1437" ph="{...}" />
+            <marker date="1524303007760" expanded="true" signature="1502:2183" ph="{...}" />
+            <marker date="1524303007760" expanded="true" signature="1603:2043" ph="{...}" />
+            <marker date="1524303007760" expanded="true" signature="2152:2180" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter16/NettyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+          <folding>
+            <marker date="1524303007892" expanded="false" signature="40:486" ph="..." />
+            <marker date="1524303007892" expanded="true" signature="488:551" ph="/**...*/" />
+            <marker date="1524303007892" expanded="true" signature="577:1902" ph="{...}" />
+            <marker date="1524303007892" expanded="true" signature="610:1773" ph="{...}" />
+            <marker date="1524303007892" expanded="false" signature="976:1150" ph="(ChannelInitializer) (socketChannel) → {" />
+            <marker date="1524303007892" expanded="false" signature="1457:1484" ph="}" />
+            <marker date="1524303007892" expanded="true" signature="1818:1900" ph="{...}" />
+            <marker date="1524303007892" expanded="true" signature="1970:2941" ph="{...}" />
+            <marker date="1524303007892" expanded="true" signature="2116:2605" ph="{...}" />
+            <marker date="1524303007892" expanded="true" signature="2705:2802" ph="{...}" />
+            <marker date="1524303007892" expanded="true" signature="2911:2939" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/serverClient/client/ConnectorIdleStateTrigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <marker date="1524450616388" expanded="true" signature="50:234" ph="..." />
+            <marker date="1524450616388" expanded="true" signature="236:298" ph="/**...*/" />
+            <marker date="1524450616388" expanded="true" signature="482:767" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tzy/netty/chapter16/NettyClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="74" column="30" lean-forward="false" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

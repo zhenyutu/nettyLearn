@@ -1,11 +1,10 @@
 package cn.tzy.netty.serverClient.server;
 
-import cn.tzy.netty.serverClient.Protocol;
+import cn.tzy.netty.serverClient.comment.Constants;
+import cn.tzy.netty.serverClient.comment.Protocol;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
-import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
-import sun.nio.ch.Net;
 
 import java.net.SocketAddress;
 
@@ -14,8 +13,6 @@ import java.net.SocketAddress;
  * @author tuzhenyu
  */
 public abstract class NettyAcceptor implements Acceptor{
-
-    private static final int AVAILABLE_PROCESSORS_NUM = Runtime.getRuntime().availableProcessors();
 
     private ServerBootstrap bootstrap;
     private NioEventLoopGroup boss;
@@ -27,7 +24,7 @@ public abstract class NettyAcceptor implements Acceptor{
     private Protocol protocol;
 
     public NettyAcceptor(Protocol protocol,SocketAddress address){
-        this(protocol,address,AVAILABLE_PROCESSORS_NUM << 1);
+        this(protocol,address, Constants.AVAILABLE_PROCESSORS_NUM << 1);
     }
 
     public NettyAcceptor(Protocol protocol,SocketAddress address,int nWorks){

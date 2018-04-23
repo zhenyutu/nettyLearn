@@ -1,17 +1,15 @@
 package cn.tzy.netty.serverClient.client;
 
-import cn.tzy.netty.serverClient.Protocol;
+import cn.tzy.netty.serverClient.comment.Constants;
+import cn.tzy.netty.serverClient.comment.Protocol;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.nio.NioEventLoopGroup;
-
-import java.net.SocketAddress;
 
 /**
  * Created by tuzhenyu on 18-4-19.
  * @author tuzhenyu
  */
 public abstract class NettyConnector implements Connector{
-    private static final int AVAILABLE_PROCESSORS_NUM = Runtime.getRuntime().availableProcessors();
 
     private Bootstrap bootstrap;
     private NioEventLoopGroup work;
@@ -20,7 +18,7 @@ public abstract class NettyConnector implements Connector{
     private Protocol protocol;
 
     public NettyConnector(){
-        this(Protocol.TCP,AVAILABLE_PROCESSORS_NUM << 1);
+        this(Protocol.TCP, Constants.AVAILABLE_PROCESSORS_NUM << 1);
     }
 
     public NettyConnector(int nWorks){

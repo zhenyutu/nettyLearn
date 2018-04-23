@@ -74,6 +74,8 @@ class HeartBeatClientHandler extends ChannelInboundHandlerAdapter {
                     curTime++;
                     ctx.writeAndFlush("biubiu");
                 }
+            }else {
+                super.userEventTriggered(ctx,evt);
             }
         }
     }

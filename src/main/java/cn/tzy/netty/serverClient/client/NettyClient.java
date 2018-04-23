@@ -4,8 +4,10 @@ import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
+import io.netty.handler.timeout.IdleStateHandler;
 
 import java.net.SocketAddress;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by tuzhenyu on 18-4-19.
@@ -18,6 +20,8 @@ public class NettyClient extends NettyTcpConnector{
         bootstrap.handler(new ChannelInitializer<Channel>() {
             protected void initChannel(Channel ch) throws Exception {
                 final ChannelPipeline pipeline = ch.pipeline();
+                pipeline.addLast(new IdleStateHandler(0,3,0, TimeUnit.SECONDS));
+                pipeline.addLast(new ConnectorIdleStateTrigger());
                 pipeline.addLast(new TimeClientHandler());
             }
         });

@@ -1,7 +1,7 @@
 package cn.tzy.netty.serverClient.server;
 
 import cn.tzy.netty.serverClient.comment.Constants;
-import cn.tzy.netty.serverClient.comment.Protocol;
+import cn.tzy.netty.serverClient.comment.TransportTypeProtocol;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -21,13 +21,13 @@ public abstract class NettyAcceptor implements Acceptor{
     private int nWorks;
 
     private SocketAddress address;
-    private Protocol protocol;
+    private TransportTypeProtocol protocol;
 
-    public NettyAcceptor(Protocol protocol,SocketAddress address){
+    public NettyAcceptor(TransportTypeProtocol protocol, SocketAddress address){
         this(protocol,address, Constants.AVAILABLE_PROCESSORS_NUM << 1);
     }
 
-    public NettyAcceptor(Protocol protocol,SocketAddress address,int nWorks){
+    public NettyAcceptor(TransportTypeProtocol protocol, SocketAddress address, int nWorks){
         this.protocol = protocol;
         this.address = address;
         this.nWorks = nWorks;

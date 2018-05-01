@@ -1,7 +1,7 @@
 package cn.tzy.netty.serverClient.client;
 
 import cn.tzy.netty.serverClient.comment.Constants;
-import cn.tzy.netty.serverClient.comment.Protocol;
+import cn.tzy.netty.serverClient.comment.TransportTypeProtocol;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.nio.NioEventLoopGroup;
 
@@ -15,17 +15,17 @@ public abstract class NettyConnector implements Connector{
     private NioEventLoopGroup work;
     private int nWorks;
 
-    private Protocol protocol;
+    private TransportTypeProtocol protocol;
 
     public NettyConnector(){
-        this(Protocol.TCP, Constants.AVAILABLE_PROCESSORS_NUM << 1);
+        this(TransportTypeProtocol.TCP, Constants.AVAILABLE_PROCESSORS_NUM << 1);
     }
 
     public NettyConnector(int nWorks){
-        this(Protocol.TCP,nWorks);
+        this(TransportTypeProtocol.TCP,nWorks);
     }
 
-    public NettyConnector(Protocol protocol,int nWorks){
+    public NettyConnector(TransportTypeProtocol protocol, int nWorks){
         this.protocol = protocol;
         this.nWorks = nWorks;
     }

@@ -1,6 +1,6 @@
 package cn.tzy.netty.serverClient.server;
 
-import cn.tzy.netty.serverClient.comment.Protocol;
+import cn.tzy.netty.serverClient.comment.TransportTypeProtocol;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 import java.net.InetSocketAddress;
@@ -13,11 +13,11 @@ import java.net.SocketAddress;
 public abstract class NettyTcpAcceptor extends NettyAcceptor{
 
     public NettyTcpAcceptor(int port){
-        super(Protocol.TCP,new InetSocketAddress(port));
+        super(TransportTypeProtocol.TCP,new InetSocketAddress(port));
         init();
     }
     public NettyTcpAcceptor(SocketAddress address) {
-        super(Protocol.TCP,address);
+        super(TransportTypeProtocol.TCP,address);
         init();
     }
 

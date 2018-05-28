@@ -1,7 +1,6 @@
 package cn.tzy.netty.serverClient.client;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
+import cn.tzy.netty.serverClient.commont.HeartBeat;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleState;
@@ -18,8 +17,7 @@ public class ConnectorIdleStateTrigger extends ChannelInboundHandlerAdapter {
             IdleStateEvent event = (IdleStateEvent)evt;
             if (event.state() == IdleState.WRITER_IDLE){
                 System.out.println("send heart beat to server");
-                ByteBuf resp = Unpooled.copiedBuffer("biubiu".getBytes());
-                ctx.writeAndFlush(resp);
+                ctx.writeAndFlush(HeartBeat.heartBeatContent());
             }
         }else
             super.userEventTriggered(ctx, evt);

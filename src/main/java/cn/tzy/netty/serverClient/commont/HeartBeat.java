@@ -1,12 +1,12 @@
-package cn.tzy.netty.serverClient.comment;
+package cn.tzy.netty.serverClient.commont;
 
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 
-import static cn.tzy.netty.serverClient.comment.MessageProtocol.HEAD_LENGTH;
-import static cn.tzy.netty.serverClient.comment.MessageProtocol.HEART_BEAT;
-import static cn.tzy.netty.serverClient.comment.MessageProtocol.MAGIC;
+import static cn.tzy.netty.serverClient.commont.MessageProtocol.HEAD_LENGTH;
+import static cn.tzy.netty.serverClient.commont.MessageProtocol.HEART_BEAT;
+import static cn.tzy.netty.serverClient.commont.MessageProtocol.MAGIC;
 
 /**
  * Created by tuzhenyu on 18-4-23.
@@ -24,6 +24,7 @@ public class HeartBeat {
         buf.writeByte(0);
 
         HEART_BEAT_BUF = Unpooled.unreleasableBuffer(buf).asReadOnly();
+
     }
 
     public static ByteBuf heartBeatContent(){

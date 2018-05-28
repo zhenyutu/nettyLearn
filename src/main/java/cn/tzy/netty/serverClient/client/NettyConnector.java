@@ -1,7 +1,7 @@
 package cn.tzy.netty.serverClient.client;
 
-import cn.tzy.netty.serverClient.comment.Constants;
-import cn.tzy.netty.serverClient.comment.TransportTypeProtocol;
+import cn.tzy.netty.serverClient.commont.Constants;
+import cn.tzy.netty.serverClient.commont.TransportTypeProtocol;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.nio.NioEventLoopGroup;
 

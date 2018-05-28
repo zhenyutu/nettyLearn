@@ -1,6 +1,6 @@
 package cn.tzy.netty.serverClient.server;
 
-import cn.tzy.netty.serverClient.comment.TransportTypeProtocol;
+import cn.tzy.netty.serverClient.commont.TransportTypeProtocol;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 import java.net.InetSocketAddress;

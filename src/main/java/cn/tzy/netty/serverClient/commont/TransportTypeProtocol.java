@@ -1,4 +1,4 @@
-package cn.tzy.netty.serverClient.comment;
+package cn.tzy.netty.serverClient.commont;
 
 /**
  * Created by tuzhenyu on 18-4-19.
